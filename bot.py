@@ -99,7 +99,7 @@ async def photo_id(message: types.Message):
         io = BytesIO()
         await message.photo[-1].download(destination_file=io)
         image = Image.open(io)
-        fd = hog(color.rgb2gray(image), 
+        fd = hog(color.rgb2gray(image.resize((224, 224))), 
             orientations=8, 
             pixels_per_cell=(16,16), 
             cells_per_block=(4, 4), 
