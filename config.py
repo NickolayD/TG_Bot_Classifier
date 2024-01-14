@@ -9,7 +9,7 @@ config = dotenv_values(".env")
 
 TELEGRAM_BOT_TOKEN= config['BOT_TOKEN'] 
 
-WEB_SERVICE_NAME = 'https://f2dc-95-73-19-223.ngrok-free.app'
+WEB_SERVICE_NAME = 'https://test-tgbot-service.onrender.com'
 
 START_BOT_TEXT = "Привет! Я - бот для распознавания различных овощей по фотографии.\n\n"\
                  "Если хочешь, чтобы я определил овощ по фото - просто отправь мне его.\n\n"\
